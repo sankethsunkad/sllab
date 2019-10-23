@@ -1,0 +1,25 @@
+n = int(input("enter the no of elements"))
+lst=[]
+for i in range(0, n):
+    ele = int(input("Enter the element"))
+    lst.append(ele) # adding the element
+print(lst)
+def dup_del(li):
+    new_li=[]
+    for i in li:
+        if i not in new_li:
+            new_li.append(i)
+
+    return new_li
+def li_eve(li):
+    new_li=[]
+    for i in li:
+        if i%2==0 :
+            new_li.append(i)
+    return new_li
+def rev(li):
+    li.reverse()
+    return li
+print(dup_del(lst))
+print(li_eve(lst))
+print(rev(lst))
