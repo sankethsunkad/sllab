@@ -1,0 +1,9 @@
+fn = input("Enter file name: ")
+num = 0
+
+with open(fn, 'r') as f:
+    for line in f:
+        words = line.split()
+        num += len(words)
+print("Number of words:")
+print(num)
