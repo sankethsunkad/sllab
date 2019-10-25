@@ -1,0 +1,33 @@
+body{
+  background-color: #212211;
+}
+.square{
+  width: 30%;
+  background-color: white;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+}
+#container{
+  width: 650px;
+  align-content: center;
+  margin: 20px auto;
+}
+h1
+{
+  color: white;
+  text-align: center;
+}
+.spe{
+  text-align: center;
+
+}
+#gameStatus{
+  text-decoration-style: solid;
+}
+#spe{
+  background-color: white;
+  height: :30px;
+  text-align: center;
+  color: black;
+}
