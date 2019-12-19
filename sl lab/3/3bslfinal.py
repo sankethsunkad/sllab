@@ -3,7 +3,7 @@ from functools import reduce
 
 f=open(sys.argv[1])
 #make a text file say counting.txt(in same location)
-#in terminal run: python3 sk_5b.py counting.txt
+#in terminal run: python3 3bslfinal.py counting.txt
 contents=f.read().split()
 print("\nfile Contents:")
 
