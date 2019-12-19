@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My SHopping cart</title>
+    <script type="text/javascript">
+      function calc(){
+        var v1=parseInt(document.getElementById('price').value);
+        var v2=parseInt(document.getElementById('items').value);
+        var v3=v1*v2;
+        document.getElementById('res').innerHTML=v3;
+        alert("Paid succesfully");
+      }
+    </script>
+  </head>
+  <body>
+    <select>
+      <option>Milk</option>
+      <option>Bread</option>
+      <option>Butter</option>
+    </select><br>
+    Price
+    <input type="text" name="" id="price"><br>
+    Number of items
+    <input type="text" name="" id="items"><br>
+    <input type="submit" name="" onclick="calc()" value="Submit">
+    <p>The total price is : <span id="res"></span></p>
+
+  </body>
+</html>
