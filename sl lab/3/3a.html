@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1> authors and their works</h1>
+  <table id="authortable" border>
+    <th>AUTHORS</th>
+    <th>NATIONALITY</th>
+    <th>BOOKTITLE</th>
+    <th>YEAR OF PUBLICATION</th>
+    <tr>
+      <td id="author0"></td>
+      <td id="nat0"></td>
+      <td id="title0"></td>
+      <td id="year0"></td>
+    </tr>
+    <tr>
+      <td id="author1"></td>
+      <td id="nat1"></td>
+      <td id="title1"></td>
+      <td id="year1"></td>
+    </tr>
+  </table>
+  <span id="author2"></span>
+  <span id="nat2"></SPAN>
+  <span id="year2"></span>
+  <span id="title2"></span>
+  <br>
+  <span id="author3"></span>
+  <span id="nat3"></span>
+  <span id="year3"></span>
+  <span id="title3"></span>
+<body>
+</html>
+
+<script>
+  var authors = [{ "author":"Black Panther","nat":"Wakanda", "title":"Home", "year":"1966" }, { "author":"Iron Man", "nat":"Marvel", "title":"3000", "year":"2002" }, { "author":"Hulk", "nat":"Marvel", "title":"The incredible hulk", "year":"2010" }, { "author":"Doctor Strange", "nat":"Marvel", "title":"JB", "year":"2012" }];
+  document.getElementById("author0").innerHTML = authors[0].author;
+  document.getElementById("nat0").innerHTML = authors[0].nat;
+  document.getElementById("title0").innerHTML = authors[0].title;
+  document.getElementById("year0").innerHTML = authors[0].year;
+
+  document.getElementById("author1").innerHTML = authors[1].author;
+  document.getElementById("nat1").innerHTML = authors[1].nat;
+  document.getElementById("title1").innerHTML = authors[1].title;
+  document.getElementById("year1").innerHTML = authors[1].year;
+
+  document.getElementById("author2").innerHTML = authors[2].author;
+  document.getElementById("nat2").innerHTML = authors[2].nat;
+  document.getElementById("title2").innerHTML = authors[2].title;
+  document.getElementById("year2").innerHTML = authors[2].year;
+
+  document.getElementById("author3").innerHTML = authors[3].author;
+  document.getElementById("nat3").innerHTML = authors[3].nat;
+  document.getElementById("title3").innerHTML = authors[3].title;
+  document.getElementById("year3").innerHTML = authors[3].year;
+</script>
