@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <style>
+    th {
+    font-size: x-large;
+    background-color: #4CAF50;
+    color: white;
+  }
+  th:hover{
+    background-color: #8B008B;
+  }
+  table {
+    text-align: center;
+    width: 100%;
+  }
+</style>
+</head>
+
+<body>
+  <table border="1">
+    <tr>
+      <th onmouseover="car1()">Tesla</th>
+      <th  onmouseover="car2()">Audi</th>
+    </tr>
+  </table>
+  <br><br><br>
+
+  <label id="label1" > Model of the car is</label>
+  <br><br><br>
+  <label id="model1" hidden></label>
+  <label id="model2" hidden></label>
+  <br><br><br>
+
+  <label>Release year of the car is</label>
+    <label id="year1" hidden></label>
+    <label id="year2" hidden></label>
+  <br><br><br>
+
+  <label>Price of the car is</label>
+    <label id="price1" hidden></label>
+    <label id="price2" hidden></label>
+</body>
+<script type="text/javascript" src="cars.json"></script>
+<script type="text/javascript">
+  function car1() {
+    var car1Data = [{
+      "model": "X",
+      "year": "2010",
+      "price":"1lakh"
+    }]
+    document.getElementById("model1").innerHTML = car1Data[0].model
+    document.getElementById("year1").innerHTML = car1Data[0].year
+    document.getElementById("price1").innerHTML = car1Data[0].price
+
+
+    document.getElementById("model1").removeAttribute("hidden")
+    document.getElementById("model2").setAttribute("hidden",true)
+
+
+    document.getElementById("year1").removeAttribute("hidden")
+    document.getElementById("year2").setAttribute("hidden",true)
+
+
+    document.getElementById("price1").removeAttribute("hidden")
+    document.getElementById("price2").setAttribute("hidden",true)
+  }
+
+  function car2() {
+    var car2Data = [{
+      "model": "Y",
+      "year": "2011",
+      "price":"545"
+    }]
+    document.getElementById("model2").innerHTML = car2Data[0].model
+    document.getElementById("year2").innerHTML = car2Data[0].year
+    document.getElementById("price2").innerHTML = car2Data[0].price
+
+    document.getElementById("model2").removeAttribute("hidden")
+    document.getElementById("model1").setAttribute("hidden",true)
+
+    document.getElementById("year2").removeAttribute("hidden")
+    document.getElementById("year1").setAttribute("hidden",true)
+
+    document.getElementById("price2").removeAttribute("hidden")
+    document.getElementById("price1").setAttribute("hidden",true)
+  }
+
+
+</script>
+
+</html>
