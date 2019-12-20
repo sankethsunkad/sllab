@@ -11,7 +11,7 @@ class SentenceReverser:
     def reverseSentence(self):
         self.reverse = " ".join(reversed(self.sentence.split()))
 
-    def getVowelCount(se    lf):
+    def getVowelCount(self):
         self.vowelCount = sum(s in self.vowels for s in self.sentence.lower())
         return self.vowelCount
 
