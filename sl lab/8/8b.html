@@ -1,0 +1,111 @@
+<html>
+
+<head>
+  <style>
+    th {
+    font-size: x-large;
+    background-color: #4CAF50;
+    color: white;
+  }
+  th:hover{
+    background-color: #8B008B;
+  }
+  table {
+    text-align: center;
+    width: 100%;
+  }
+</style>
+</head>
+
+<body>
+  <table border="1">
+    <tr>
+      <th >Hostiptal</th>
+      <th  >Location</th>
+    </tr>
+    <tr>
+      <td id="h1"></td>
+      <td id="l1"></td>
+    </tr>
+    <tr>
+      <td id="h2"></td>
+      <td id="l2"></td>
+    </tr>
+  </table>
+  <br><br><br>
+<h1>Patient Details</h1>
+  <table border="1">
+    <tr>
+      <th onmouseover="car1()">Patient1</th>
+      <th  onmouseover="car2()">Patient2</th>
+    </tr>
+  </table>
+
+  <label id="label1" > Name of the patient</label>
+  <br><br><br>
+  <label id="model1" hidden></label>
+  <label id="model2" hidden></label>
+  <br><br><br>
+
+  <label>Adhar no of the patient is</label>
+    <label id="year1" hidden></label>
+    <label id="year2" hidden></label>
+  <br><br><br>
+
+  <label>Lab tests of the patient is</label>
+    <label id="price1" hidden></label>
+    <label id="price2" hidden></label>
+</body>
+<script type="text/javascript">
+  hos=[{"name":"Oasis","location":"bangalore"},{"name":"sparsh","location":"mumbai"}]
+  document.getElementById("h1").innerHTML = hos[0].name
+  document.getElementById("l1").innerHTML = hos[0].location
+  document.getElementById("h2").innerHTML = hos[1].name
+  document.getElementById("l2").innerHTML = hos[1].location
+  function car1() {
+    var car1Data = [{
+      "name": "Mukesh",
+      "adhar": "3223",
+      "lab":"[cat,pet]"
+    }]
+    document.getElementById("model1").innerHTML = car1Data[0].name
+    document.getElementById("year1").innerHTML = car1Data[0].adhar
+    document.getElementById("price1").innerHTML = car1Data[0].lab
+
+
+    document.getElementById("model1").removeAttribute("hidden")
+    document.getElementById("model2").setAttribute("hidden",true)
+
+
+    document.getElementById("year1").removeAttribute("hidden")
+    document.getElementById("year2").setAttribute("hidden",true)
+
+
+    document.getElementById("price1").removeAttribute("hidden")
+    document.getElementById("price2").setAttribute("hidden",true)
+  }
+
+  function car2() {
+    var car2Data = [{
+      "name": "Sukesh",
+      "adhar": "32232",
+      "lab":"[cat,asad,pet]"
+    }]
+    document.getElementById("model2").innerHTML = car2Data[0].name
+    document.getElementById("year2").innerHTML = car2Data[0].adhar
+    document.getElementById("price2").innerHTML = car2Data[0].lab
+
+    document.getElementById("model2").removeAttribute("hidden")
+    document.getElementById("model1").setAttribute("hidden",true)
+
+    document.getElementById("year2").removeAttribute("hidden")
+    document.getElementById("year1").setAttribute("hidden",true)
+
+    document.getElementById("price2").removeAttribute("hidden")
+    document.getElementById("price1").setAttribute("hidden",true)
+  }
+
+
+</script>
+
+</html>
